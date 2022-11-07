@@ -1,9 +1,10 @@
 import React from 'react';
 import EnterCode from "../components/EnterCode";
+import styles from './Wrapper.module.scss'
 
 const Wrapper = () => {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <EnterCode />
     </div>
   );

@@ -1,0 +1,7 @@
+
+.wrapper {
+  display: flex;
+  & .ant-input {
+    width: 32px;
+  }
+}
