@@ -1,7 +1,28 @@
 
 .wrapper {
   display: flex;
-  & .ant-input {
-    width: 32px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #707070;
+  :global {
+    & .ant-form {
+      border-radius: 8px;
+      background: #fff;
+      width: 300px;
+      padding: 32px;
+      display: flex;
+      justify-content: center;
+    }
+    & .ant-input {
+      text-align: center;
+      width: 32px;
+      height: 32px;
+      font-size: 32px;
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
   }
+
 }
