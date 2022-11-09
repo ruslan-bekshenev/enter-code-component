@@ -1,18 +1,23 @@
 import React from 'react';
-import {Form, Input} from "antd";
-import {useForm} from "react-hook-form";
+import {Form, Input, Typography} from "antd";
+import {useForm, Controller} from "react-hook-form";
 
 const EnterCode = () => {
-  const {} = useForm({
+  const { control } = useForm({
     mode: 'onChange'
   })
   return (
-    <Form>
-      <Input />
-      <Input />
-      <Input />
-      <Input />
-    </Form>
+    <>
+      <Form>
+        <Typography>
+          Form
+        </Typography>
+        <Input />
+        <Input />
+        <Input />
+        <Input />
+      </Form>
+    </>
   );
 };
 
